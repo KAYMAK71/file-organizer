@@ -1,37 +1,80 @@
+/* Genel Ayarlar */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background: #f4f6f8;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Başlık */
 header {
-    background-color: #4CAF50;
+    background: linear-gradient(90deg, #4CAF50, #45a049);
     color: white;
-    padding: 1rem 0;
     text-align: center;
-}
-
-main {
-    margin: 20px;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
+    padding: 2rem 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-    margin: 0.5em 0;
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
 }
 
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+/* Ana İçerik */
+main {
+    margin: 2rem auto;
+    max-width: 800px;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Bölümler */
 .introduction, .features {
-    margin-bottom: 1.5em;
+    margin-bottom: 2rem;
 }
 
+h2 {
+    font-size: 1.8rem;
+    color: #4CAF50;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+/* İndirme Linki */
+.download-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.download-link:hover {
+    background: #45a049;
+}
+
+/* Altbilgi */
 footer {
     text-align: center;
-    padding: 10px 0;
-    background-color: #333;
+    padding: 1rem 0;
+    background: #333;
     color: white;
+    margin-top: 2rem;
 }
